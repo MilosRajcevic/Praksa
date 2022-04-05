@@ -24,9 +24,21 @@
 }
 
 .overlay {
-  position: absolute;
-  // z-index: 1000;
-  width: 100vw;
+  top: 0;
+  right: 0;
   height: 100vh;
-  // background-color: red;
+  width: 100vw;
+  position: fixed;
+  z-index: 500;
+  background: $white;
+  transition: all 0.2s linear;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+  }
 }

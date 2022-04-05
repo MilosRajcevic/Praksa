@@ -10,6 +10,8 @@ const navSearch = document.querySelector(".nav__search");
 const navSearchBtn = document.querySelector(".js-search-btn");
 const navFormSearchBtn = document.querySelector(".js-form-search-btn");
 const navFormSearchCloseBtn = document.querySelector(".js-form-close-btn");
+// const searchFrom = document.querySelector(".js-search-form");
+const overlay = document.querySelector(".overlay");
 
 const toggleHambMenu = function () {
   hambBtn.addEventListener("click", function () {
@@ -61,14 +63,24 @@ const toggleSubMenuClick = function () {
   });
 };
 
-const toggleSearchForm = function () {
-  [navSearchBtn, navFormSearchCloseBtn].forEach((el) =>
-    el.addEventListener("click", function () {
-      navSearch.classList.toggle(activeClassName);
-      navSearchBtn.classList.toggle(activeClassName);
-    })
-  );
+const toggleOverlay = function () {
+  [navSearch, navSearchBtn, overlay].forEach((el) => {
+    console.log("radi");
+
+    el.classList.toggle(activeClassName);
+  });
 };
+
+const toggleSearchForm = function () {
+  [navSearchBtn, navFormSearchCloseBtn].forEach((el) => {
+    el.addEventListener("click", toggleOverlay);
+  });
+};
+
+// searchFrom.addEventListener("submit", function () {
+//   console.log("submit");
+//   toggleOverlay();
+// });
 
 const desktop = function () {
   if (!tabQuery.matches) return;

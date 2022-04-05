@@ -68,18 +68,22 @@
   </div>
 </nav>
 
-<from class="nav__search">
-  <div class="wrapper">
-    <input
-      class="nav__search-input"
-      type="text"
-      name="search"
-      id="search"
-      placeholder="Search"
-    />
-    <button class="nav__search-btn nav__search-btn--from js-from-search-btn">
-      <i class="nav__search-icon icon-search1"></i>
-    </button>
+<div class="overlay">
+  <from class="nav__search js-search-form">
+    <div class="wrapper">
+      <input
+        class="nav__search-input js-search-input"
+        type="text"
+        name="search"
+        id="search"
+        placeholder="Search"
+      />
+      <button class="nav__search-btn nav__search-btn--from js-from-search-btn">
+        <i class="nav__search-icon icon-search1"></i>
+      </button>
+    </div>
+  </from>
+  <div class="nav__close-search js-form-close-btn">
+    <i class="icon-x"></i>
   </div>
-  <div class="nav__close-search icon-x js-form-close-btn"></div>
-</from>
+</div>
