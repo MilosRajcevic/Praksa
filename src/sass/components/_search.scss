@@ -1,0 +1,46 @@
+.nav {
+  &__search {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+  &__search-input {
+    background-color: $white;
+    border: none;
+    padding: 1.6rem 3rem;
+    font-size: 3.5rem;
+    color: $grey-dark;
+    width: 100%;
+    border-bottom: 1px solid $grey;
+
+    @include respond(tab) {
+      font-size: 2.8rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  &__search-btn {
+    &--from {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: -5rem;
+    }
+  }
+
+  &__close-search {
+    cursor: pointer;
+    font-size: 5rem;
+    color: $grey-dark;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+}

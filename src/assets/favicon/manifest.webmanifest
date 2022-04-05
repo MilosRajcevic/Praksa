@@ -1,0 +1,15 @@
+{
+  "icons": [
+    {
+      "src": "./assets/favicon/android-chrome-192x192.png",
+      "type": "img/png",
+      "size": "192x192"
+    },
+
+    {
+      "src": "./assets/favicon/android-chrome-512x512.png",
+      "type": "img/png",
+      "size": "512x512"
+    }
+  ]
+}

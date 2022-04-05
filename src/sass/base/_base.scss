@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font-epilogue;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-style: normal;
+  color: $grey-dark;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+::selection {
+  background: $selection-color;
+  color: $selection-text-color;
+}
+
+:focus {
+  outline-color: $outline-color;
+}
+
+.wrapper {
+  max-width: 166rem;
+  padding: 0 21.5rem;
+  margin: 0 auto;
+
+  @include respond(tab) {
+    padding: 0 2rem;
+  }
+}

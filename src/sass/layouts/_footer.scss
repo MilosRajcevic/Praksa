@@ -1,0 +1,48 @@
+.footer {
+  background-color: $grey-light;
+  &__contnet {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+
+    @include respond(mob) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    @include respond(mob) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-item {
+    &:not(:last-child) {
+      margin-right: 1.6rem;
+    }
+  }
+
+  &__nav-link {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    color: $grey-dark;
+  }
+
+  &__copyright {
+    margin-left: auto;
+    @include respond(mob) {
+      margin-left: 0;
+    }
+
+    p {
+      font-size: 1.4rem;
+      line-height: 3rem;
+    }
+  }
+}
