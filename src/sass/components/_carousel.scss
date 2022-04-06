@@ -1,0 +1,87 @@
+.section__carousel {
+  padding: 7rem 0;
+  background-color: $grey-light;
+  height: 86rem;
+  position: relative;
+
+  @include respond(tab) {
+    height: 68rem;
+  }
+  @include respond(mob) {
+    height: 58rem;
+    padding: 6rem 0 8rem;
+  }
+}
+
+.carousel {
+  display: flex;
+  height: 58rem;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.carousel__container {
+  position: absolute;
+  width: 65rem;
+  height: 53rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s;
+
+  @include respond(tab) {
+    max-width: 38rem;
+  }
+
+  @include respond(mob) {
+    height: 38rem;
+  }
+}
+
+.carousel__img {
+  max-width: 58rem;
+  margin-bottom: 4.4rem;
+
+  @include respond(tab) {
+    max-width: 38rem;
+
+    max-height: 22rem;
+  }
+
+  @include respond(mob) {
+    max-height: 20rem;
+    margin-bottom: 3.9rem;
+  }
+}
+
+.carousel__tag {
+  max-width: 58rem;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $orange;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  @include respond(mob) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.carouesl__heading {
+  max-width: 58rem;
+  margin-bottom: 2rem;
+
+  @include respond(mob) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.carousel__btns {
+  display: flex;
+  position: absolute;
+  bottom: 7rem;
+
+  @include respond(tab) {
+    bottom: 2rem;
+  }
+}

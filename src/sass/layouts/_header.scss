@@ -7,214 +7,217 @@
   @include respond(tab) {
     justify-content: start;
   }
-
-  &__logo {
-    @include respond(tab) {
-      height: 6rem;
-      width: 6rem;
-      margin: 1rem 0;
-    }
+}
+.nav__logo {
+  @include respond(tab) {
+    height: 6rem;
+    width: 6rem;
+    margin: 1rem 0;
   }
+}
 
-  &__list {
-    display: flex;
+.nav__list {
+  display: flex;
 
-    @include respond(tab) {
-      position: absolute;
-      flex-direction: column;
-      top: 100%;
-      width: 100vw;
-      height: 100vh;
-      background-color: $white;
-
-      left: -150%;
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: all 0.3s ease-in-out;
-
-      &::before {
-        content: "";
-        display: block;
-        height: 2px;
-        width: 100vw;
-        background-color: $grey;
-        position: absolute;
-      }
-
-      &.active {
-        left: 0;
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-        left: -2rem;
-      }
-    }
-  }
-
-  &__list-item {
-    padding: 7rem 1.5rem;
-    position: relative;
-
-    @include respond(tab) {
-      padding: 3rem 2rem;
-      border-bottom: 1px solid $grey;
-    }
-    @include respond(mob) {
-      padding: 2rem 0;
-    }
-
-    &.active {
-      background-color: $grey;
-    }
-  }
-
-  &__list-icon {
-    display: none;
-
-    @include respond(tab) {
-      font-size: 3rem;
-      color: $orange;
-      display: block;
-      transition: all 0.3s;
-
-      &.active {
-        transform: rotate(90deg);
-      }
-    }
-  }
-
-  &__list-link {
-    color: $black;
-    font-size: 2rem;
-    font-weight: 600;
-
-    @include respond(tab) {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    @include respond(mob) {
-      font-size: 1.8rem;
-    }
-  }
-
-  &__sub-list {
-    background-color: $white;
+  @include respond(tab) {
     position: absolute;
-    text-align: center;
-    border-radius: 1rem;
-    width: 30rem;
-    padding: 4rem 0;
+    flex-direction: column;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 0 0.8rem 2rem 2px rgba($black, 0.2);
-    max-height: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $white;
+
+    left: -150%;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all 0.3s ease-in-out;
 
-    @include respond(tab) {
-      position: relative;
-      top: 0;
-      left: 6rem;
-      transform: translateX(0);
-      text-align: start;
-      box-shadow: none;
-      padding: 0;
-      transition: all 0.4s;
+    &::before {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100vw;
+      background-color: $grey;
+      position: absolute;
     }
 
     &.active {
+      left: 0;
       opacity: 1;
-      max-height: 100vh;
       visibility: visible;
       pointer-events: auto;
-      padding-top: 3rem;
-    }
-  }
-
-  &__sub-icon {
-    color: $white;
-    font-size: 2rem;
-    position: absolute;
-    transform: rotate(-90deg);
-    top: -1.4rem;
-
-    @include respond(tab) {
-      display: none;
-    }
-  }
-
-  &__sub-item {
-    &:not(:last-child) {
-      margin-bottom: 3rem;
-
-      @include respond(tab) {
-        margin-bottom: 2rem;
-      }
-    }
-  }
-
-  &__sub-link {
-    color: $black;
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-
-    @include respond(mob) {
-      font-size: 1.6rem;
-    }
-  }
-
-  &__btns {
-    display: flex;
-    align-items: center;
-    @include respond(tab) {
-      margin-left: auto;
-    }
-  }
-
-  &__search {
-    @include respond(tab) {
-      margin-left: auto;
-    }
-  }
-
-  &__search-btn {
-    border: none;
-    background: none;
-    height: 8rem;
-    width: 8rem;
-    cursor: pointer;
-
-    @include respond(tab) {
-      height: 6rem;
-      width: 3rem;
-      margin-right: 2rem;
-    }
-    &--nav {
-      display: none;
-
-      &.active {
-        display: block;
-      }
-    }
-  }
-
-  &__search-icon {
-    font-size: 4rem;
-    color: $orange;
-
-    @include respond(tab) {
-      font-size: 3rem;
+      left: -2rem;
     }
   }
 }
 
-.header {
-  height: 100vh;
+.nav__item {
+  padding: 7rem 1.5rem;
+  position: relative;
+
+  @include respond(tab) {
+    padding: 3rem 2rem;
+    border-bottom: 1px solid $grey;
+  }
+  @include respond(mob) {
+    padding: 2rem;
+  }
+
+  &.active {
+    background-color: $grey;
+  }
+}
+
+.nav__icon {
+  display: none;
+
+  @include respond(tab) {
+    font-size: 3rem;
+    color: $orange;
+    display: block;
+    transition: all 0.3s;
+
+    &.active {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.nav__link {
+  color: $black;
+  font-size: 2rem;
+  font-weight: 600;
+
+  @include respond(tab) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @include respond(mob) {
+    font-size: 1.8rem;
+  }
+}
+
+.nav__sub-list {
+  background-color: $white;
+  position: absolute;
+  text-align: center;
+  border-radius: 1rem;
+  width: 30rem;
+  padding: 4rem 0;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 0.8rem 2rem 2px rgba($black, 0.2);
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: all 0.3s;
+
+  @include respond(tab) {
+    position: relative;
+    top: 0;
+    left: 6rem;
+    transform: translateX(0);
+    text-align: start;
+    box-shadow: none;
+    padding: 0;
+    transition: all 0.4s;
+  }
+
+  &.active {
+    opacity: 1;
+    max-height: 100vh;
+    visibility: visible;
+    pointer-events: auto;
+    padding-top: 3rem;
+  }
+}
+
+.nav__sub-icon {
+  color: $white;
+  font-size: 2rem;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: -1.4rem;
+
+  @include respond(tab) {
+    display: none;
+  }
+}
+
+.nav__sub-item {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+
+    @include respond(tab) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.nav__sub-link {
+  color: $black;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+
+  @include respond(mob) {
+    font-size: 1.6rem;
+  }
+}
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+  @include respond(tab) {
+    margin-left: auto;
+  }
+}
+
+.nav__search {
+  @include respond(tab) {
+    margin-left: auto;
+  }
+}
+
+.nav__search-btn {
+  border: none;
+  background: none;
+  height: 8rem;
+  width: 8rem;
+  cursor: pointer;
+
+  @include respond(tab) {
+    height: 6rem;
+    width: 3rem;
+    margin-right: 2rem;
+  }
+
+  &--nav {
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &--from {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: -5rem;
+  }
+}
+
+.nav__search-icon {
+  font-size: 4rem;
+  color: $orange;
+
+  @include respond(tab) {
+    font-size: 3rem;
+  }
 }

@@ -42,3 +42,15 @@
     pointer-events: auto;
   }
 }
+
+.flex-1 {
+  @include respond(mob) {
+    order: 2;
+  }
+}
+
+.flex-2 {
+  @include respond(mob) {
+    order: 1;
+  }
+}

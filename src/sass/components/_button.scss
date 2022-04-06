@@ -53,3 +53,56 @@
     }
   }
 }
+
+.btn {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: $white;
+  background-color: $orange;
+  padding: 1rem 1.6rem;
+  width: fit-content;
+  border-radius: 0.5rem;
+
+  @include respond(mob) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    padding: 1.1rem 2.3rem;
+  }
+}
+
+.btn-carousel {
+  height: 8rem;
+  width: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: 2rem;
+  border: 1px solid $grey-dark;
+  border-radius: 100rem;
+  cursor: pointer;
+
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+
+  @include respond(mob) {
+    height: 6rem;
+    width: 6rem;
+  }
+
+  &.deactive {
+    pointer-events: none;
+  }
+}
+
+.btn-carousel-icon {
+  font-size: 6rem;
+  font-weight: 400;
+  color: $orange;
+
+  @include respond(mob) {
+    font-size: 4rem;
+  }
+}

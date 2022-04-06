@@ -1,13 +1,47 @@
 .heading-1 {
+  font-size: 5rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+  color: $white;
+
+  @include respond(tab) {
+    font-size: 4rem;
+    line-height: 4.1rem;
+  }
 }
 
 .heading-2 {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 700;
+  color: $dark-blue;
+
+  @include respond(tab) {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  @include respond(mob) {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+  }
 }
 
 .heading-3 {
-}
+  font-size: 2.6rem;
+  line-height: 3.4rem;
+  font-weight: 700;
+  color: $grey-dark;
 
-.heading-4 {
+  @include respond(tab) {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  @include respond(mob) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 a {

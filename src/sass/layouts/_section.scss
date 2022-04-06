@@ -1,0 +1,107 @@
+.section__hero {
+  @include bg-center;
+  padding: 16rem 0;
+
+  @include respond(tab) {
+    padding: 12rem 0;
+  }
+
+  @include respond(mob) {
+    padding: 6rem 0;
+  }
+}
+.hero {
+  width: 60rem;
+  background-color: rgba($black, 0.2);
+  padding: 3rem 2rem;
+
+  @include respond(mob) {
+    max-width: 33.5rem;
+  }
+}
+.higlight {
+  color: $light-blue;
+}
+.hero__text {
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  font-weight: 400;
+  color: $white;
+  margin-top: 3rem;
+
+  @include respond(tab) {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-top: 1rem;
+  }
+}
+
+.section__fusce {
+  padding: 7rem 0;
+
+  @include respond(tab) {
+    padding: 5rem 0;
+  }
+}
+
+.fusce {
+  display: flex;
+  align-items: center;
+  gap: 17rem;
+
+  @include respond(tab) {
+    gap: 4.8rem;
+  }
+
+  @include respond(mob) {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.fusce__text-box {
+  width: 100%;
+  height: 100%;
+  flex-basis: 50%;
+
+  @include respond(mob) {
+    flex-basis: 100%;
+  }
+}
+
+.fusce__text {
+  font-size: 2rem;
+  line-height: 3rem;
+  color: $grey-dark;
+  margin: 3rem 0;
+
+  @include respond(tab) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+  @include respond(mob) {
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+  }
+}
+
+.fusce__img-box {
+  flex-basis: 50%;
+  @include respond(mob) {
+    flex-basis: auto;
+    width: 100%;
+  }
+}
+
+.fusce__img {
+  min-width: 100%;
+  height: 34rem;
+  border-radius: 1.5rem;
+  @include bg-center;
+
+  @include respond(mob) {
+    min-width: 100%;
+    height: 21.5rem;
+    margin-bottom: 2rem;
+  }
+}

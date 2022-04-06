@@ -1,16 +1,17 @@
 "use strict";
+import carousel from "./carousel";
+
 const activeClassName = "active";
 const tabQuery = window.matchMedia("(min-width:1100px)");
 const html = document.querySelector(".js");
 
 const hambBtn = document.querySelector(".js-btn-hamburger");
-const navItem = document.querySelectorAll(".nav__list-item");
-const navList = document.querySelector(".nav__list");
-const navSearch = document.querySelector(".nav__search");
+const navItem = document.querySelectorAll(".nav__item");
+const navList = document.querySelector(".js-nav-list");
+const navSearch = document.querySelector(".js-search-form");
 const navSearchBtn = document.querySelector(".js-search-btn");
 const navFormSearchBtn = document.querySelector(".js-form-search-btn");
 const navFormSearchCloseBtn = document.querySelector(".js-form-close-btn");
-// const searchFrom = document.querySelector(".js-search-form");
 const overlay = document.querySelector(".overlay");
 
 const toggleHambMenu = function () {
@@ -25,7 +26,7 @@ const toggleHambMenu = function () {
 const toggleSubMenuHover = function () {
   navItem.forEach((item) => {
     const toggleSubMenu = function (e) {
-      const navItemParent = e.target.closest(".nav__list-item");
+      const navItemParent = e.target.closest(".nav__item");
       const subMenuChild = navItemParent.querySelector(".nav__sub-list");
 
       if (!subMenuChild) return;
@@ -46,9 +47,9 @@ const toggleSubMenuHover = function () {
 const toggleSubMenuClick = function () {
   navItem.forEach((item) => {
     const toggleSubMenu = function (e) {
-      const navItemParent = e.target.closest(".nav__list-item");
+      const navItemParent = e.target.closest(".nav__item");
       const subMenuChild = navItemParent.querySelector(".nav__sub-list");
-      const iconSubMenu = navItemParent.querySelector(".nav__list-icon");
+      const iconSubMenu = navItemParent.querySelector(".nav__icon");
 
       if (!subMenuChild) return;
 
@@ -65,8 +66,6 @@ const toggleSubMenuClick = function () {
 
 const toggleOverlay = function () {
   [navSearch, navSearchBtn, overlay].forEach((el) => {
-    console.log("radi");
-
     el.classList.toggle(activeClassName);
   });
 };
@@ -77,24 +76,34 @@ const toggleSearchForm = function () {
   });
 };
 
-// searchFrom.addEventListener("submit", function () {
-//   console.log("submit");
-//   toggleOverlay();
-// });
+navSearch.addEventListener("submit", function () {
+  console.log("submit");
+  toggleOverlay();
+});
+
+const init = function () {
+  toggleSearchForm();
+  toggleHambMenu();
+  carousel();
+};
 
 const desktop = function () {
   if (!tabQuery.matches) return;
   toggleSubMenuHover();
-  toggleSearchForm();
-  toggleHambMenu();
-};
 
+  document.addEventListener("keydown", function (keyboard_button) {
+    if (
+      keyboard_button.key === "Escape" &&
+      navSearch.classList.contains(activeClassName)
+    )
+      toggleOverlay();
+  });
+};
 const tab = function () {
   if (tabQuery.matches) return;
-  toggleSearchForm();
-  toggleHambMenu();
   toggleSubMenuClick();
 };
 
+init();
 desktop();
 tab();
