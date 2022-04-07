@@ -1,0 +1,175 @@
+.section__form {
+  padding: 7rem 0;
+  background-color: $dark-blue;
+
+  @include respond(tab) {
+    padding: 5rem 0;
+  }
+}
+
+.section__form-heading {
+  color: $white;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form {
+  color: $white;
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+
+  @include respond(tab) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.form__group-flex {
+  display: flex;
+
+  @include respond(mob) {
+    flex-direction: column;
+  }
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  & label {
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  & input,
+  .form__message {
+    background: none;
+    border: none;
+    padding: 1.6rem 1.9rem;
+    font-weight: 400;
+    border: 1px solid $grey-light;
+    color: $grey-light;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: 400;
+
+    @include respond(tab) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
+
+    @include respond(mob) {
+      font-size: 1.8rem;
+      line-height: 1.8rem;
+      padding: 1.6rem 1.1rem;
+    }
+
+    &::placeholder {
+      color: $grey-light;
+      font-size: 2.4rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+
+      @include respond(tab) {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+      @include respond(mob) {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-right: 4.5rem;
+
+    @include respond(mob) {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.form__radio {
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+.form__checkbox {
+  display: none;
+}
+
+.from__radio-box {
+  cursor: pointer;
+  position: relative;
+  padding-left: 3rem;
+  font-weight: 700;
+
+  @include respond(mob) {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+
+.from__radio-btn {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: $white;
+  position: absolute;
+  left: 0;
+  display: inline-block;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: $light-blue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.form__checkbox:checked ~ .from__radio-box .from__radio-btn::after {
+  opacity: 1;
+}
+
+.form__required {
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & input {
+    cursor: pointer;
+    background: none;
+    border: 1px solid $grey-light;
+    padding: 1rem 1.6rem;
+    color: $grey-light;
+    border-radius: 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 700;
+  }
+}
+
+.form__message {
+  height: 18rem;
+  @include respond(mob) {
+    height: 16rem;
+  }
+}

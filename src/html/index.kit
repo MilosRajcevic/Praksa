@@ -86,7 +86,7 @@
 
       <section class="section__carousel">
         <div class="wrapper">
-          <h2 class="heading-2">Sed ultricies lorem</h2>
+          <h2 class="carousel__heading heading-2">Sed ultricies lorem</h2>
 
           <div class="carousel">
             <a href="#" class="carousel__container js-tab">
@@ -143,41 +143,100 @@
                   <p class="tabs__year-mob">2021</p>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn tabs__btn--menu">Archive</button>
+                  <button class="tabs__btn-menu">Archive</button>
                 </li>
               </ul>
 
-              <ul class="tabs__list">
+              <ul class="tabs__list deactive">
                 <li class="tabs__item">
-                  <button class="tabs__btn active">2021</button>
+                  <button class="tabs__btn active" data-tab="4">2021</button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn">2020</button>
+                  <button class="tabs__btn" data-tab="3">2020</button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn">2019</button>
+                  <button class="tabs__btn" data-tab="2">2019</button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn">2018</button>
+                  <button class="tabs__btn" data-tab="1">2018</button>
                 </li>
               </ul>
             </nav>
             <div class="tabs__text-box">
-              <p class="tabs__text">
-                Proin pretium vehicula sagittis. Donec eget orci eget nunc
-                vulputate pharetra semper feugiat orci. Phasellus pharetra dui
-                erat, ut eleifend nibh sagittis ac. Nulla molestie, nunc vel
-                faucibus dictum, ligula tellus rutrum dui, nec mattis odio massa
-                eu nunc. Morbi in nulla sed leo maximus scelerisque. Mauris
-                libero odio, feugiat vel risus sed, pretium placerat turpis. Sed
-                efficitur id sem at lacinia. Phasellus semper fringilla
-                ullamcorper. img-text id porta enim, sed gravida urna.
-              </p>
-              <p class="tabs__text">
-                Nullam molestie elit vel massa accumsan lacinia. Aliquam
-                faucibus sapien ante, eu cursus risus rutrum sit amet.
-                Pellentesque at vehicula lacus.
-              </p>
+              <div class="tabs__tab tabs__tab--4 active">
+                <p class="tabs__text">
+                  Proin pretium vehicula sagittis. Donec eget orci eget nunc
+                  vulputate pharetra semper feugiat orci. Phasellus pharetra dui
+                  erat, ut eleifend nibh sagittis ac. Nulla molestie, nunc vel
+                  faucibus dictum, ligula tellus rutrum dui, nec mattis odio
+                  massa eu nunc. Morbi in nulla sed leo maximus scelerisque.
+                  Mauris libero odio, feugiat vel risus sed, pretium placerat
+                  turpis. Sed efficitur id sem at lacinia. Phasellus semper
+                  fringilla ullamcorper. img-text id porta enim, sed gravida
+                  urna.
+                </p>
+                <p class="tabs__text">
+                  Nullam molestie elit vel massa accumsan lacinia. Aliquam
+                  faucibus sapien ante, eu cursus risus rutrum sit amet.
+                  Pellentesque at vehicula lacus.
+                </p>
+              </div>
+
+              <div class="tabs__tab tabs__tab--3">
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  porro similique quo corrupti tempore rerum, aut ducimus
+                  exercitationem iste obcaecati incidunt distinctio deserunt
+                  consectetur quibusdam fugit, culpa qui impedit id est
+                  repellendus cupiditate tempora numquam. Fugit ea dolore
+                  ducimus error voluptatum quisquam fugiat vitae nam quidem
+                  voluptate, dignissimos accusantium tempora?
+                </p>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae, officia.
+                </p>
+              </div>
+
+              <div class="tabs__tab tabs__tab--2">
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  porro similique quo corrupti tempore rerum, aut ducimus
+                  exercitationem iste obcaecati incidunt distinctio deserunt
+                  consectetur quibusdam fugit, culpa qui impedit id est
+                  repellendus cupiditate tempora numquam. Fugit ea dolore
+                  ducimus error voluptatum quisquam fugiat vitae nam quidem
+                  voluptate, dignissimos accusantium tempora?
+                </p>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae, officia.
+                </p>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Debitis voluptatem a nostrum autem unde, nisi deserunt
+                  inventore ullam dolorum illo.
+                </p>
+              </div>
+
+              <div class="tabs__tab tabs__tab--1">
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  porro similique quo corrupti tempore rerum, aut ducimus
+                  exercitationem iste obcaecati incidunt distinctio deserunt
+                  consectetur quibusdam fugit, culpa qui impedit id est
+                  repellendus cupiditate tempora numquam. Fugit ea dolore
+                  ducimus error voluptatum quisquam fugiat vitae nam quidem
+                  voluptate, dignissimos accusantium tempora?
+                </p>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="tabs__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae, officia.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -208,9 +267,11 @@
         </div>
       </section>
 
-      <section class="section__carousel">
+      <section class="section__carousel section__carousel--sec">
         <div class="wrapper">
-          <h2 class="heading-2">Elit vel massa accumsan lacinia</h2>
+          <h2 class="carousel__heading heading-2">
+            Elit vel massa accumsan lacinia
+          </h2>
 
           <div class="carousel">
             <a href="#" class="carousel__container js-tab-sec">
@@ -252,6 +313,245 @@
               <i class="btn-carousel-icon icon-navigate_next"></i>
             </button>
           </div>
+        </div>
+      </section>
+
+      <section class="section__accordion">
+        <div class="wrapper">
+          <h2 class="section__accordion-header heading-2">
+            Mauris libero odio
+          </h2>
+          <div class="accordion">
+            <!-- Text 1  -->
+
+            <div class="accordion__content">
+              <button class="accordion__btn active">
+                <span class="accordion__btn-text"
+                  >Amet estibulum lobortis sed senectus</span
+                >
+                <div class="accordion__btn-icon">
+                  <span>&nbsp;</span>
+                  <span>&nbsp;</span>
+                </div>
+              </button>
+              <div class="accordion__text-box active">
+                <p class="accordion__text">
+                  Egestas a mi vestibulum ullamcorper facilisi eget nam
+                  phasellus torquent gravida vestibulum ultrices elementum
+                  viverra lobortis ultricies parturient a
+
+                  <u class="accordion__highlight"
+                    >vestibulum facilisi dictumst</u
+                  >
+                  mi dis scelerisque risus mattis. Nam eleifend torquent
+                  penatibus vitae morbi ad condimentum a ullamcorper aliquam
+                  donec bibendum placerat suspendisse consectetur parturient at.
+                  Ut elementum vitae auctor neque scelerisque nullam porta urna
+                  penatibus tempor montes nullam pharetra tempus morbi non
+                  ullamcorper tempor libero a a erat. Lacus ullamcorper
+                  vulputate ante nisi in ad dictumst fermentum quam a odio nec
+                  scelerisque a adipiscing suspendisse donec ultricies
+                  condimentum
+                  <u class="accordion__highlight">blandit tempor </u>in eros
+                  vestibulum vestibulum. Blandit a a interdum euismod vestibulum
+                  at consectetur ac vulputate ullamcorper scelerisque mi
+                  hendrerit a est scelerisque vestibulum condimentum.
+                </p>
+                <p class="accordion__text">
+                  Eros adipiscing vestibulum parturient cum nibh justo vehicula
+                  sodales a nostra condimentum adipiscing a in vulputate
+                  suspendisse parturient ac a adipiscing scelerisque suspendisse
+                  cum enim sem. A eget parturient posuere taciti adipiscing sed
+                  a vestibulum augue suspendisse ac dui primis suscipit
+                  ullamcorper ullamcorper nunc sit augue adipiscing facilisis
+                  pretium senectus condimentum bibendum.
+                </p>
+              </div>
+            </div>
+            <!-- Text 2  -->
+            <div class="accordion__content">
+              <button class="accordion__btn">
+                <span class="accordion__btn-text"
+                  >Libero risus accumsan commodo scelerisque</span
+                >
+                <div class="accordion__btn-icon">
+                  <span>&nbsp;</span>
+                  <span>&nbsp;</span>
+                </div>
+              </button>
+              <div class="accordion__text-box">
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Saepe, amet?
+
+                  <u class="accordion__highlight"
+                    >vestibulum facilisi dictumst</u
+                  >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta dolore reprehenderit, iusto sint delectus, temporibus
+                  numquam vero quae molestiae animi quis, fugit accusamus
+                  ratione repudiandae velit hic sed. Doloremque, iusto.
+                  <u class="accordion__highlight">blandit tempor </u>Lorem ipsum
+                  dolor sit amet consectetur, adipisicing elit. Saepe, amet?
+                </p>
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Soluta dolore reprehenderit, iusto sint delectus, temporibus
+                  numquam vero quae molestiae animi quis, fugit accusamus
+                  ratione repudiandae velit hic sed. Doloremque, iusto.
+                </p>
+              </div>
+            </div>
+            <!-- Text 3  -->
+            <div class="accordion__content">
+              <button class="accordion__btn">
+                <span class="accordion__btn-text"
+                  >Condimentum phasellus cras diam consectetur</span
+                >
+                <div class="accordion__btn-icon">
+                  <span>&nbsp;</span>
+                  <span>&nbsp;</span>
+                </div>
+              </button>
+              <div class="accordion__text-box">
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                  harum voluptatibus dicta beatae, eligendi esse cum quas.
+                  Accusamus, quos possimus.
+
+                  <u class="accordion__highlight"
+                    >vestibulum facilisi dictumst</u
+                  >
+                  Lorem ipsum dolor sit amet.
+                  <u class="accordion__highlight">blandit tempor </u>Lorem ipsum
+                  dolor sit amet, consectetur adipisicing elit. Similique,
+                  voluptates.
+                </p>
+                <p class="accordion__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                  soluta dolore provident odit recusandae molestiae facere
+                  incidunt accusantium, blanditiis ratione?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__form">
+        <div class="wrapper">
+          <h2 class="heading-2 section__form-heading">Mauris libero odio</h2>
+          <form class="form">
+            <!-- Column 1  -->
+            <div class="form__group-flex">
+              <div class="form__group">
+                <label for="first-name">First Name*:</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  placeholder="First name "
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="last-name">Last Name*:</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  placeholder="Last name "
+                  required
+                />
+              </div>
+            </div>
+
+            <!-- Column 2  -->
+            <div class="form__group-flex">
+              <div class="form__group">
+                <label for="compnay-name">Company name:</label>
+                <input
+                  type="text"
+                  id="compnay-name"
+                  name="compnay-name"
+                  placeholder="Company Name"
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="title">Title:</label>
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  placeholder="Title"
+                />
+              </div>
+            </div>
+
+            <!-- Column 3  -->
+            <div class="form__group-flex">
+              <div class="form__group">
+                <label for="email">Email address*:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Email addres"
+                  required
+                />
+              </div>
+
+              <div class="form__group">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" />
+              </div>
+            </div>
+
+            <!-- Message area -->
+            <div class="form__group">
+              <label for="message">Your message*:</label>
+              <textarea
+                class="form__message"
+                id="message"
+                name="message"
+                rows="5"
+                cols="5"
+                required
+              >
+Your message...</textarea
+              >
+            </div>
+
+            <!-- Radio check area  -->
+            <div class="form__radio">
+              <input
+                class="form__checkbox"
+                type="radio"
+                id="yes"
+                name="check"
+              />
+              <label for="yes" class="from__radio-box">
+                <span class="from__radio-btn"></span>Pellentesque at vehicula
+                lacus</label
+              >
+            </div>
+
+            <div class="form__radio">
+              <input class="form__checkbox" type="radio" id="no" name="check" />
+              <label for="no" class="from__radio-box">
+                <span class="from__radio-btn"></span> Pellentesque at vehicula
+                lacus</label
+              >
+            </div>
+
+            <!-- Submit btn -->
+            <em class="form__required">*Required fields.</em>
+            <div class="form__submit">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
         </div>
       </section>
     </main>

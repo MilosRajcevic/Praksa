@@ -22,8 +22,18 @@
 .higlight {
   color: $light-blue;
 }
+
 .hero__heading {
   margin-bottom: 3rem;
+
+  @include respond(tab) {
+    height: 9.8rem;
+    margin-bottom: 1rem;
+  }
+  @include respond(mob) {
+    height: auto;
+    margin-bottom: 1.4rem;
+  }
 }
 .hero__text {
   font-size: 2.2rem;
@@ -34,6 +44,5 @@
   @include respond(tab) {
     font-size: 2rem;
     line-height: 3rem;
-    margin-top: 1rem;
   }
 }

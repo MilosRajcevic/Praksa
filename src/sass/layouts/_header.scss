@@ -14,6 +14,10 @@
     width: 6rem;
     margin: 1rem 0;
   }
+
+  @include respond(mob) {
+    margin: 1rem 0 2.1rem;
+  }
 }
 
 .nav__list {
@@ -28,9 +32,7 @@
     background-color: $white;
 
     left: -150%;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    @include invisible;
     transition: all 0.3s ease-in-out;
 
     &::before {
@@ -43,11 +45,8 @@
     }
 
     &.active {
-      left: 0;
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-      left: -2rem;
+      left: -1rem;
+      @include visible;
     }
   }
 }
@@ -112,9 +111,7 @@
   transform: translateX(-50%);
   box-shadow: 0 0.8rem 2rem 2px rgba($black, 0.2);
   max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  @include invisible;
   transition: all 0.3s;
 
   @include respond(tab) {
@@ -129,10 +126,8 @@
   }
 
   &.active {
-    opacity: 1;
+    @include visible;
     max-height: 100vh;
-    visibility: visible;
-    pointer-events: auto;
     padding-top: 3rem;
   }
 }

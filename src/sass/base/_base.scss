@@ -36,6 +36,9 @@ body {
   margin: 0 auto;
 
   @include respond(tab) {
-    padding: 0 1rem;
+    padding: 0 2rem;
+  }
+  @include respond(mob) {
+    padding: 0 2rem;
   }
 }
