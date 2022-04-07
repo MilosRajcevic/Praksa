@@ -1,4 +1,4 @@
-.section__turpis {
+.section__tabs {
   padding: 7rem 0;
 
   @include respond(tab) {
@@ -6,18 +6,18 @@
   }
 }
 
-.turpis {
+.tabs {
 }
 
-.turpis__heading {
+.tabs__heading {
   margin-bottom: 2rem;
 }
 
-.turpis__nav {
+.tabs__nav {
   position: relative;
 }
 
-.turpis__list-mob {
+.tabs__list-mob {
   display: none;
 
   @include respond(mob) {
@@ -26,8 +26,8 @@
   }
 }
 
-.turpis__btn,
-.turpis__year-mob {
+.tabs__btn,
+.tabs__year-mob {
   font-size: 2.2rem;
   line-height: 5rem;
   padding: 0 3.7rem 0 4.2rem;
@@ -38,12 +38,12 @@
   font-weight: 400;
 }
 
-.turpis__year-mob {
+.tabs__year-mob {
   background-color: $light-blue;
   font-weight: 700;
 }
 
-.turpis__btn {
+.tabs__btn {
   cursor: pointer;
   border: none;
   color: $grey-dark;
@@ -63,8 +63,9 @@
   }
 }
 
-.turpis__list {
+.tabs__list {
   display: flex;
+
   margin-bottom: 2px;
 
   @include respond(mob) {
@@ -76,17 +77,20 @@
   }
 }
 
-.turpis__item {
+.tabs__item {
   text-align: center;
 }
 
-.turpis__text-box {
+.tabs__text-box {
   background-color: $grey-light;
   padding: 3rem;
 }
 
-.turpis__text {
+.tabs__text {
   color: $black;
-  margin-bottom: 2rem;
   line-height: 2.8rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 }

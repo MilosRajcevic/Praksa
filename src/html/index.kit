@@ -48,7 +48,7 @@
       >
         <div class="wrapper">
           <div class="hero">
-            <h1 class="heading-1">
+            <h1 class="hero__heading heading-1">
               Donec <span class="higlight"> condimentum </span>viverra ante
             </h1>
             <p class="hero__text">
@@ -60,21 +60,25 @@
         </div>
       </section>
 
-      <section class="section__fusce">
+      <section class="section__img-text">
         <div class="wrapper">
-          <div class="fusce">
-            <div class="fusce__text-box flex-1">
-              <h2 class="heading-2">Suspendisse vitae purus quis dui</h2>
-              <p class="fusce__text">
+          <div class="img-text img-text__reverse">
+            <div class="img-text__text-box">
+              <h2 class="img-text__heading heading-2">
+                Suspendisse vitae purus quis dui
+              </h2>
+              <p class="img-text__text">
                 Nam a augue eu ipsum accumsan pretium. Proin ut dolor id arcu
                 dignissim dictum. Aenean laoreet, felis vel dapibus interdum,
-                turpis nunc congue tellus, sed ultricies lorem nulla eget diam.
+                tabs nunc congue tellus, sed ultricies lorem nulla eget diam.
               </p>
               <a href="#" class="btn">Fusce blandit</a>
             </div>
-            <div class="fusce__img-box flex-2">
-              <img class="fusce__img" style="background-image:
-              url(../assets/desktop/suspendisse.png)"">
+            <div class="img-text__img-box">
+              <div
+                class="img-text__img"
+                style="background-image: url(../assets/desktop/suspendisse.png)"
+              ></div>
             </div>
           </div>
         </div>
@@ -85,31 +89,35 @@
           <h2 class="heading-2">Sed ultricies lorem</h2>
 
           <div class="carousel">
-            <div class="carousel__container js-tab">
+            <a href="#" class="carousel__container js-tab">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-one-one.png"
                 alt="Highway in the city at night"
               />
-              <p class="carousel__tag">Macenas</p>
+              <span class="carousel__tag">Macenas</span>
               <h3 class="carouesl__heading heading-3">
                 Proin ullamcorper fermentum quam
               </h3>
-              <time datetime="2021-11-05">05 November 2021</time>
-            </div>
+              <time class="carousel__time" datetime="2021-11-05"
+                >05 November 2021</time
+              >
+            </a>
 
-            <div class="carousel__container js-tab">
+            <a href="#" class="carousel__container js-tab">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-one-two.png"
                 alt="Highway in the city at night"
               />
-              <p class="carousel__tag">feugiat</p>
+              <span class="carousel__tag">feugiat</span>
               <h3 class="carouesl__heading heading-3">
                 Quisque cursus ornare mi malesuada porttitor
               </h3>
-              <time datetime="2021-11-05">05 November 2021</time>
-            </div>
+              <time class="carousel__time" datetime="2021-11-05"
+                >05 November 2021</time
+              >
+            </a>
           </div>
 
           <div class="carousel__btns">
@@ -123,39 +131,39 @@
         </div>
       </section>
 
-      <section class="section__turpis">
+      <section class="section__tabs">
         <div class="wrapper">
-          <div class="turpis">
-            <h2 class="turpis__heading heading-2">
+          <div class="tabs">
+            <h2 class="tabs__heading heading-2">
               Turpis eu ultrices porttitor
             </h2>
-            <nav class="turpis__nav">
-              <ul class="turpis__list-mob">
-                <li class="turpis__item">
-                  <p class="turpis__year-mob">2021</p>
+            <nav class="tabs__nav">
+              <ul class="tabs__list-mob">
+                <li class="tabs__item">
+                  <p class="tabs__year-mob">2021</p>
                 </li>
-                <li class="turpis__item">
-                  <button class="turpis__btn turpis__btn--menu">Archive</button>
+                <li class="tabs__item">
+                  <button class="tabs__btn tabs__btn--menu">Archive</button>
                 </li>
               </ul>
 
-              <ul class="turpis__list">
-                <li class="turpis__item">
-                  <button class="turpis__btn active">2021</button>
+              <ul class="tabs__list">
+                <li class="tabs__item">
+                  <button class="tabs__btn active">2021</button>
                 </li>
-                <li class="turpis__item">
-                  <button class="turpis__btn">2020</button>
+                <li class="tabs__item">
+                  <button class="tabs__btn">2020</button>
                 </li>
-                <li class="turpis__item">
-                  <button class="turpis__btn">2019</button>
+                <li class="tabs__item">
+                  <button class="tabs__btn">2019</button>
                 </li>
-                <li class="turpis__item">
-                  <button class="turpis__btn">2018</button>
+                <li class="tabs__item">
+                  <button class="tabs__btn">2018</button>
                 </li>
               </ul>
             </nav>
-            <div class="turpis__text-box">
-              <p class="turpis__text">
+            <div class="tabs__text-box">
+              <p class="tabs__text">
                 Proin pretium vehicula sagittis. Donec eget orci eget nunc
                 vulputate pharetra semper feugiat orci. Phasellus pharetra dui
                 erat, ut eleifend nibh sagittis ac. Nulla molestie, nunc vel
@@ -163,9 +171,9 @@
                 eu nunc. Morbi in nulla sed leo maximus scelerisque. Mauris
                 libero odio, feugiat vel risus sed, pretium placerat turpis. Sed
                 efficitur id sem at lacinia. Phasellus semper fringilla
-                ullamcorper. Fusce id porta enim, sed gravida urna.
+                ullamcorper. img-text id porta enim, sed gravida urna.
               </p>
-              <p class="turpis__text">
+              <p class="tabs__text">
                 Nullam molestie elit vel massa accumsan lacinia. Aliquam
                 faucibus sapien ante, eu cursus risus rutrum sit amet.
                 Pellentesque at vehicula lacus.
@@ -175,17 +183,21 @@
         </div>
       </section>
 
-      <section class="section__fusce">
+      <section class="section__img-text">
         <div class="wrapper">
-          <div class="fusce">
-            <div class="fusce__img-box">
-              <img class="fusce__img" style="background-image:
-              url(../assets/desktop/proin.png)"">
+          <div class="img-text">
+            <div class="img-text__img-box">
+              <div
+                class="img-text__img"
+                style="background-image: url(../assets/desktop/proin.png)"
+              ></div>
             </div>
 
-            <div class="fusce__text-box">
-              <h2 class="heading-2">Proin pretium vehicula</h2>
-              <p class="fusce__text">
+            <div class="img-text__text-box">
+              <h2 class="img-text__heading heading-2">
+                Proin pretium vehicula
+              </h2>
+              <p class="img-text__text">
                 Etiam vulputate ipsum massa. Pellentesque porttitor, mi varius
                 sollicitudin varius, lacus ante ullamcorper justo, in semper
                 ante velit ac ipsum.
@@ -201,31 +213,35 @@
           <h2 class="heading-2">Elit vel massa accumsan lacinia</h2>
 
           <div class="carousel">
-            <div class="carousel__container js-tab-sec">
+            <a href="#" class="carousel__container js-tab-sec">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-two-one.png"
                 alt="Highway in the city at night"
               />
-              <p class="carousel__tag">Phasellus</p>
+              <span class="carousel__tag">Phasellus</span>
               <h3 class="carouesl__heading heading-3">
                 Aliquam egestas finibus massa vitae sollicitudin
               </h3>
-              <time datetime="2021-11-05">05 November 2021</time>
-            </div>
+              <time class="carousel__time" datetime="2021-11-05"
+                >05 November 2021</time
+              >
+            </a>
 
-            <div class="carousel__container js-tab-sec">
+            <a href="#" class="carousel__container js-tab-sec">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-two-two.png"
                 alt="Highway in the city at night"
               />
-              <p class="carousel__tag">ullamcorper</p>
+              <span class="carousel__tag">ullamcorper</span>
               <h3 class="carouesl__heading heading-3">
                 Etiam vulputate ipsum massa
               </h3>
-              <time datetime="2021-11-05">05 November 2021</time>
-            </div>
+              <time class="carousel__time" datetime="2021-11-05"
+                >05 November 2021</time
+              >
+            </a>
           </div>
 
           <div class="carousel__btns">
