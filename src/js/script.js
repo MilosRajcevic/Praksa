@@ -1,7 +1,8 @@
-"use strict";
+import { activeClassName } from "./config";
 import carousel from "./carousel";
+import tabbedCommponents from "./tabs";
+import accordion from "./accordion";
 
-const activeClassName = "active";
 const tabQuery = window.matchMedia("(min-width:1100px)");
 const html = document.querySelector(".js");
 
@@ -85,6 +86,8 @@ const init = function () {
   toggleSearchForm();
   toggleHambMenu();
   carousel();
+  tabbedCommponents();
+  accordion();
 };
 
 const desktop = function () {

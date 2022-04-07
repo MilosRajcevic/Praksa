@@ -1,31 +1,43 @@
 .section__carousel {
   padding: 7rem 0;
   background-color: $grey-light;
-  height: 86rem;
+  height: 86.4rem;
   position: relative;
 
   @include respond(tab) {
-    height: 68rem;
+    height: 66.7rem;
+    padding: 5rem 0 8rem;
   }
 
   @include respond(mob) {
     height: 58rem;
-    padding: 6rem 0 8rem;
   }
+
+  &--sec {
+    @include respond(tab) {
+      height: 64rem;
+    }
+  }
+}
+.carousel__heading {
+  margin-bottom: 3rem;
 }
 
 .carousel {
   display: flex;
-  min-height: 58rem;
+  height: 58rem;
   position: relative;
   overflow-x: hidden;
+
+  @include respond(mob) {
+    height: 40rem;
+  }
 }
 
 .carousel__container {
   position: absolute;
   width: 65rem;
-  min-height: 53rem;
-  margin-top: 3rem;
+  height: 53rem;
   margin-bottom: 3rem;
   transition: all 0.3s;
 
@@ -34,7 +46,7 @@
   }
 
   @include respond(mob) {
-    height: 38rem;
+    height: 24rem;
   }
 }
 .carousel__img,
@@ -55,12 +67,12 @@
 
   @include respond(tab) {
     max-width: 38rem;
-    max-height: 22rem;
+    max-height: 21rem;
   }
 
   @include respond(mob) {
-    max-height: 20rem;
     margin-bottom: 3.9rem;
+    max-height: 20rem;
   }
 }
 
@@ -71,6 +83,11 @@
   color: $orange;
   font-weight: 700;
   letter-spacing: 3px;
+
+  @include respond(mob) {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
 }
 
 .carousel__btns {
@@ -85,4 +102,9 @@
 
 .carousel__time {
   color: $grey-dark;
+
+  @include respond(mob) {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+  }
 }

@@ -1,6 +1,6 @@
-("use strict");
+import { deactiveClassName } from "./config";
+
 export default function carousel() {
-  const deactiveClassName = "deactive";
   const carouselBtns = document.querySelectorAll(".carousel__btns");
   // First carousel
   const btnLeft = document.querySelector(".js-btn-left");
