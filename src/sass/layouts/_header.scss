@@ -45,7 +45,7 @@
     }
 
     &.active {
-      left: -1rem;
+      left: -2rem;
       @include visible;
     }
   }
@@ -87,6 +87,15 @@
   color: $black;
   font-size: 2rem;
   font-weight: 600;
+
+  &:hover,
+  &:active {
+    color: $grey-dark;
+
+    @include respond(tab) {
+      color: $black;
+    }
+  }
 
   @include respond(tab) {
     display: flex;
@@ -159,6 +168,12 @@
   font-size: 1.8rem;
   line-height: 1.8rem;
   font-weight: 500;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    color: $grey-dark;
+  }
 
   @include respond(mob) {
     font-size: 1.6rem;

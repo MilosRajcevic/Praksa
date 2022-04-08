@@ -1,4 +1,4 @@
-.section__tabs {
+.tabs {
   padding: 7rem 0;
 
   @include respond(tab) {
@@ -6,7 +6,7 @@
   }
 }
 
-.tabs {
+.tabs__content {
 }
 
 .tabs__heading {
@@ -62,10 +62,22 @@
   color: $grey-dark;
   transition: all 0.3s;
 
+  &:hover {
+    background-color: $light-blue-2;
+    color: $white;
+
+    @include respond(tab) {
+      background-color: $grey-light;
+      color: $grey-dark;
+    }
+  }
+
   &.active {
     background-color: $light-blue;
     color: $white;
     font-weight: 700;
+    cursor: none;
+    pointer-events: none;
 
     @include respond(mob) {
       background-color: $grey-light;

@@ -1,4 +1,4 @@
-.section__hero {
+.hero {
   @include bg-center;
   padding: 16rem 0;
 
@@ -10,7 +10,8 @@
     padding: 6rem 0;
   }
 }
-.hero {
+
+.hero__content {
   width: 60rem;
   background-color: rgba($black, 0.2);
   padding: 3rem 2rem;
@@ -19,6 +20,7 @@
     max-width: 33.5rem;
   }
 }
+
 .higlight {
   color: $light-blue;
 }
@@ -35,6 +37,7 @@
     margin-bottom: 1.4rem;
   }
 }
+
 .hero__text {
   font-size: 2.2rem;
   line-height: 3.2rem;

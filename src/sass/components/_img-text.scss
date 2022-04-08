@@ -1,4 +1,4 @@
-.section__img-text {
+.img-text {
   padding: 7rem 0;
 
   @include respond(tab) {
@@ -6,13 +6,20 @@
   }
 }
 
-.img-text {
+.img-text__content {
   display: flex;
   align-items: center;
-  gap: 17rem;
 
-  @include respond(tab) {
-    gap: 4.8rem;
+  & > :nth-child(1) {
+    margin-right: 17rem;
+
+    @include respond(tab) {
+      margin-right: 4.8rem;
+    }
+
+    @include respond(mob) {
+      margin-right: 0;
+    }
   }
 
   @include respond(mob) {

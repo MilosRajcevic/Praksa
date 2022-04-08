@@ -1,4 +1,4 @@
-.section__accordion {
+.accordion {
   padding: 7rem 0;
 
   @include respond(tab) {
@@ -6,11 +6,11 @@
   }
 }
 
-.section__accordion-header {
+.accordion__header {
   margin-bottom: 3rem;
 }
 
-.accordion {
+.accordion__content {
 }
 
 .accordion__btn {

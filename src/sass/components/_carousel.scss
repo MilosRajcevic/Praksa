@@ -1,4 +1,4 @@
-.section__carousel {
+.carousel {
   padding: 7rem 0;
   background-color: $grey-light;
   height: 86.4rem;
@@ -12,18 +12,19 @@
   @include respond(mob) {
     height: 58rem;
   }
+}
 
-  &--sec {
-    @include respond(tab) {
-      height: 64rem;
-    }
+.carousel--sec {
+  @include respond(mob) {
+    height: 64rem;
   }
 }
+
 .carousel__heading {
   margin-bottom: 3rem;
 }
 
-.carousel {
+.carousel__content {
   display: flex;
   height: 58rem;
   position: relative;
@@ -43,6 +44,7 @@
 
   @include respond(tab) {
     max-width: 38rem;
+    height: 35rem;
   }
 
   @include respond(mob) {

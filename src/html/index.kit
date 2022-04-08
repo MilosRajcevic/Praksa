@@ -43,11 +43,11 @@
 
     <main>
       <section
-        class="section__hero"
+        class="hero"
         style="background-image: url(../assets/desktop/hero.png)"
       >
         <div class="wrapper">
-          <div class="hero">
+          <div class="hero__content">
             <h1 class="hero__heading heading-1">
               Donec <span class="higlight"> condimentum </span>viverra ante
             </h1>
@@ -60,9 +60,9 @@
         </div>
       </section>
 
-      <section class="section__img-text">
+      <section class="img-text">
         <div class="wrapper">
-          <div class="img-text img-text__reverse">
+          <div class="img-text__content img-text__reverse">
             <div class="img-text__text-box">
               <h2 class="img-text__heading heading-2">
                 Suspendisse vitae purus quis dui
@@ -72,7 +72,7 @@
                 dignissim dictum. Aenean laoreet, felis vel dapibus interdum,
                 tabs nunc congue tellus, sed ultricies lorem nulla eget diam.
               </p>
-              <a href="#" class="btn">Fusce blandit</a>
+              <a href="javascript:;" class="img-text__btn btn">Fusce blandit</a>
             </div>
             <div class="img-text__img-box">
               <div
@@ -84,12 +84,12 @@
         </div>
       </section>
 
-      <section class="section__carousel">
+      <section class="carousel">
         <div class="wrapper">
           <h2 class="carousel__heading heading-2">Sed ultricies lorem</h2>
 
-          <div class="carousel">
-            <a href="#" class="carousel__container js-tab">
+          <div class="carousel__content">
+            <a href="javascript:;" class="carousel__container js-tab">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-one-one.png"
@@ -104,14 +104,14 @@
               >
             </a>
 
-            <a href="#" class="carousel__container js-tab">
+            <a href="javascript:;" class="carousel__container js-tab">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-one-two.png"
                 alt="Highway in the city at night"
               />
               <span class="carousel__tag">feugiat</span>
-              <h3 class="carouesl__heading heading-3">
+              <h3 class="carousel__heading heading-3">
                 Quisque cursus ornare mi malesuada porttitor
               </h3>
               <time class="carousel__time" datetime="2021-11-05"
@@ -121,19 +121,19 @@
           </div>
 
           <div class="carousel__btns">
-            <button class="btn-carousel js-btn-left">
-              <i class="btn-carousel-icon icon-navigate_before"></i>
+            <button type="button" class="carousel__btn js-btn-left">
+              <i class="carousel__btn-icon icon-navigate_before"></i>
             </button>
-            <button class="btn-carousel js-btn-right">
-              <i class="btn-carousel-icon icon-navigate_next"></i>
+            <button type="button" class="carousel__btn js-btn-right">
+              <i class="carousel__btn-icon icon-navigate_next"></i>
             </button>
           </div>
         </div>
       </section>
 
-      <section class="section__tabs">
+      <section class="tabs">
         <div class="wrapper">
-          <div class="tabs">
+          <div class="tabs__content">
             <h2 class="tabs__heading heading-2">
               Turpis eu ultrices porttitor
             </h2>
@@ -149,16 +149,24 @@
 
               <ul class="tabs__list deactive">
                 <li class="tabs__item">
-                  <button class="tabs__btn active" data-tab="4">2021</button>
+                  <button type="button" class="tabs__btn active" data-tab="4">
+                    2021
+                  </button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn" data-tab="3">2020</button>
+                  <button type="button" class="tabs__btn" data-tab="3">
+                    2020
+                  </button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn" data-tab="2">2019</button>
+                  <button type="button" class="tabs__btn" data-tab="2">
+                    2019
+                  </button>
                 </li>
                 <li class="tabs__item">
-                  <button class="tabs__btn" data-tab="1">2018</button>
+                  <button type="button" class="tabs__btn" data-tab="1">
+                    2018
+                  </button>
                 </li>
               </ul>
             </nav>
@@ -242,9 +250,9 @@
         </div>
       </section>
 
-      <section class="section__img-text">
+      <section class="img-text">
         <div class="wrapper">
-          <div class="img-text">
+          <div class="img-text__content">
             <div class="img-text__img-box">
               <div
                 class="img-text__img"
@@ -258,23 +266,23 @@
               </h2>
               <p class="img-text__text">
                 Etiam vulputate ipsum massa. Pellentesque porttitor, mi varius
-                sollicitudin varius, lacus ante ullamcorper justo, in semper
-                ante velit ac ipsum.
+                sollicitudin varius, lacus ante justo, in semper ante velit ac
+                ipsum.
               </p>
-              <a href="#" class="btn">Fusce blandit</a>
+              <a href="javascript:;" class="img-text__btn btn">Fusce blandit</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section__carousel section__carousel--sec">
+      <section class="carousel carousel--sec">
         <div class="wrapper">
           <h2 class="carousel__heading heading-2">
             Elit vel massa accumsan lacinia
           </h2>
 
-          <div class="carousel">
-            <a href="#" class="carousel__container js-tab-sec">
+          <div class="carousel__content">
+            <a href="javascript:;" class="carousel__container js-tab-sec">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-two-one.png"
@@ -289,14 +297,14 @@
               >
             </a>
 
-            <a href="#" class="carousel__container js-tab-sec">
+            <a href="javascript:;" class="carousel__container js-tab-sec">
               <img
                 class="carousel__img"
                 src="../assets/desktop/carousel-two-two.png"
                 alt="Highway in the city at night"
               />
               <span class="carousel__tag">ullamcorper</span>
-              <h3 class="carouesl__heading heading-3">
+              <h3 class="carousel__heading heading-3">
                 Etiam vulputate ipsum massa
               </h3>
               <time class="carousel__time" datetime="2021-11-05"
@@ -306,26 +314,24 @@
           </div>
 
           <div class="carousel__btns">
-            <button class="btn-carousel js-btn-left-sec">
-              <i class="btn-carousel-icon icon-navigate_before"></i>
+            <button type="button" class="carousel__btn js-btn-left-sec">
+              <i class="carousel__btn-icon icon-navigate_before"></i>
             </button>
-            <button class="btn-carousel js-btn-right-sec">
-              <i class="btn-carousel-icon icon-navigate_next"></i>
+            <button type="button" class="carousel__btn js-btn-right-sec">
+              <i class="carousel__btn-icon icon-navigate_next"></i>
             </button>
           </div>
         </div>
       </section>
 
-      <section class="section__accordion">
+      <section class="accordion">
         <div class="wrapper">
-          <h2 class="section__accordion-header heading-2">
-            Mauris libero odio
-          </h2>
-          <div class="accordion">
+          <h2 class="accordion__header heading-2">Mauris libero odio</h2>
+          <div class="accordion__content">
             <!-- Text 1  -->
 
-            <div class="accordion__content">
-              <button class="accordion__btn active">
+            <div class="accordion__row">
+              <button type="button" class="accordion__btn active">
                 <span class="accordion__btn-text"
                   >Amet estibulum lobortis sed senectus</span
                 >
@@ -369,8 +375,8 @@
               </div>
             </div>
             <!-- Text 2  -->
-            <div class="accordion__content">
-              <button class="accordion__btn">
+            <div class="accordion__row">
+              <button type="button" class="accordion__btn">
                 <span class="accordion__btn-text"
                   >Libero risus accumsan commodo scelerisque</span
                 >
@@ -403,8 +409,8 @@
               </div>
             </div>
             <!-- Text 3  -->
-            <div class="accordion__content">
-              <button class="accordion__btn">
+            <div class="accordion__row">
+              <button type="button" class="accordion__btn">
                 <span class="accordion__btn-text"
                   >Condimentum phasellus cras diam consectetur</span
                 >
@@ -438,11 +444,11 @@
         </div>
       </section>
 
-      <section class="section__form">
+      <section class="form">
         <div class="wrapper">
-          <h2 class="heading-2 section__form-heading">Mauris libero odio</h2>
-          <form class="form">
-            <!-- Column 1  -->
+          <h2 class="heading-2 form__heading">Mauris libero odio</h2>
+          <form class="form__content">
+            <!-- Row 1  -->
             <div class="form__group-flex">
               <div class="form__group">
                 <label for="first-name">First Name*:</label>
@@ -467,7 +473,7 @@
               </div>
             </div>
 
-            <!-- Column 2  -->
+            <!-- Row 2  -->
             <div class="form__group-flex">
               <div class="form__group">
                 <label for="compnay-name">Company name:</label>
@@ -490,7 +496,7 @@
               </div>
             </div>
 
-            <!-- Column 3  -->
+            <!-- Row 3  -->
             <div class="form__group-flex">
               <div class="form__group">
                 <label for="email">Email address*:</label>
@@ -532,16 +538,16 @@ Your message...</textarea
                 id="yes"
                 name="check"
               />
-              <label for="yes" class="from__radio-box">
-                <span class="from__radio-btn"></span>Pellentesque at vehicula
+              <label for="yes" class="form__radio-box">
+                <span class="form__radio-btn"></span>Pellentesque at vehicula
                 lacus</label
               >
             </div>
 
             <div class="form__radio">
               <input class="form__checkbox" type="radio" id="no" name="check" />
-              <label for="no" class="from__radio-box">
-                <span class="from__radio-btn"></span> Pellentesque at vehicula
+              <label for="no" class="form__radio-box">
+                <span class="form__radio-btn"></span> Pellentesque at vehicula
                 lacus</label
               >
             </div>
